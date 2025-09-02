@@ -13,7 +13,7 @@ const AlumniLogin = () => {
           <input type="password" className="input w-full" placeholder="Password" />
 
           <button className="btn btn-neutral mt-4">Login</button>
-          <button className="btn btn-neutral mt-4"> <img src="" alt="" /> Register with Google</button>
+          <button className="btn btn-neutral mt-4"> Register with Google</button>
         </fieldset>
       </div>
         <Outlet />

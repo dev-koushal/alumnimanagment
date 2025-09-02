@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Calendar, Copy, Lock, MapPin, Phone, Mail } from 'lucide-react';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigate } from 'react-router';
 import Image from './image.png'
+import './StudentDashboard.css'
 const StudentDashboard = () => {
   const [formData, setFormData] = useState({
     firstName: 'Koushal',
@@ -15,7 +16,7 @@ const StudentDashboard = () => {
   });
 
   const [copied, setCopied] = useState(false);
-
+  const navigate = useNavigate();
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
       ...prev,
@@ -38,15 +39,15 @@ const StudentDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-black ">
-      {/* Animated Background with Noise */}
-      <div className="absolute inset-0 opacity-30">
+    <>
+    
+    <div className="min-h-screen p-2 relative overflow-hidden bg-black ">
+       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-blue-900/40 to-black"></div>
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-600/20 rounded-full blur-2xl animate-bounce animation-delay-2000"></div>
         
-        {/* Noise overlay */}
         <div 
           className="absolute inset-0 opacity-10"
           style={{
@@ -56,33 +57,19 @@ const StudentDashboard = () => {
         ></div>
       </div>
 
-      {/* Main Content */}
       <div className="relative z-10 p-6">
         <div className="max-w-6xl mx-auto">
-          {/* Header */}
+        
           <div className="flex items-center justify-between mb-8">
-            <h1 className="text-3xl font-bold text-white">User Profile</h1>
+            <h1 className=" text-xl md:text-3xl font-bold text-white">Student Profile</h1>
             <div className="flex gap-4">
-              <button
-                onClick={handleCancel}
-                className="px-6 py-2 bg-gray-800/80 backdrop-blur-sm text-gray-300 rounded-lg hover:bg-gray-700/80 transition-all duration-300 border border-gray-700"
-              >
-                CANCEL
-              </button>
-              <button
-                onClick={handleSave}
-                className="px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg hover:from-purple-500 hover:to-blue-500 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
-              >
-                SAVE
-              </button>
+              <div onClick={()=>navigate('/student/explore')} id='explore' className=' btn w-30 md:w-80 h-10 md:h-12 animate-bounce ' >Explore</div>
             </div>
           </div>
 
-          {/* Main Profile Card */}
           <div className="bg-gray-900/60 backdrop-blur-md rounded-2xl p-8 border border-gray-800/50 shadow-2xl">
             <h2 className="text-xl font-semibold text-white mb-6 border-b border-gray-800 pb-4">Basic Info</h2>
-            
-            {/* Profile Header */}
+     
             <div className="flex items-start gap-6 mb-8">
               <div className="relative">
                 <img
@@ -93,7 +80,7 @@ const StudentDashboard = () => {
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-4">
-                  <h3 className="text-2xl font-bold text-white">Koushal Yadav</h3>
+                  <h3 className="text-lg md:text-2xl font-bold text-white">Koushal Yadav</h3>
                   <div className="flex items-center gap-2 bg-gray-800/60 backdrop-blur-sm px-3 py-1 rounded-lg border border-gray-700">
                     <span className="text-gray-300 text-sm">ID: 22</span>
                     <button
@@ -112,7 +99,7 @@ const StudentDashboard = () => {
               </div>
             </div>
 
-            {/* Form Fields */}
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div>
                 <label className="block text-gray-300 text-sm font-medium mb-2">First Name:</label>
@@ -148,9 +135,9 @@ const StudentDashboard = () => {
               
             </div>
 
-            {/* Contacts and Address Section */}
+          
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Contacts */}
+             
               <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50">
                 <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
                   <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center">
@@ -192,7 +179,7 @@ const StudentDashboard = () => {
                 </div>
               </div>
 
-              {/* Address */}
+            
               <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50">
                 <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
                   <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
@@ -241,11 +228,18 @@ const StudentDashboard = () => {
                 </div>
               </div>
             </div>
+            <button
+                onClick={handleSave}
+                className="mt-2 py-3 hover:cursor-pointer hover:bg-white px-9 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+              >
+                SAVE
+              </button>
           </div>
+          
         </div>
       </div>
 
-      <style jsx>{`
+      <style jsx="true">{`
         .animation-delay-1000 {
           animation-delay: 1s;
         }
@@ -253,7 +247,9 @@ const StudentDashboard = () => {
           animation-delay: 2s;
         }
       `}</style>
+      
     </div>
+    </>
   );
   <Outlet />
 };
