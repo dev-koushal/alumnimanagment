@@ -16,9 +16,12 @@ function StudentExplorePage() {
             <StudenProfileButton />
         </div>
         
-        <form className="flex justify-center mt-2 gap-8">
+        <form className="flex flex-wrap justify-center mt-2 gap-2 md:gap-8 mb-4">
         <button className="btn" >More Filter</button>
         <input className="btn rounded-2xl " type="reset" value="Show All"/>
+        <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="CSE"/>
+        <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2025"/>
+        <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2024"/>
         <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="CSE"/>
         <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2025"/>
         <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2024"/>
