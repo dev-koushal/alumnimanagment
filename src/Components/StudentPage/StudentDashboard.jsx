@@ -8,7 +8,7 @@ const StudentDashboard = () => {
     firstName: 'Koushal',
     lastName: 'Yadav',
     department: 'CSE',
-    phone: '7805042612',
+    phone: '7805042XXX',
     email: 'koushalydv99@gmail.com',
     country: 'INDIA',
     city: 'Bhopal',
