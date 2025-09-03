@@ -11,8 +11,8 @@ will be adding backend soon
 ## Tech Stack
 
 - **React** (with hooks & router)
-- - **React-Router**
-  - - **Redux Toolkit** 
+-  **React-Router**
+-  **Redux Toolkit** 
 - **TailwindCSS** (styling)
 - **Mock API / Hardcoded data** (temporary data source)
 
