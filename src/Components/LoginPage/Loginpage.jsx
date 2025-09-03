@@ -1,11 +1,11 @@
-import React from 'react'
+import React ,{lazy}from 'react'
 import { Link, Routes, Route, Outlet } from 'react-router'
-import StudentLogin from './StudentLogin'
-import AlumniLogin from './AlumniLogin'
-import AdminLogin from './AdminLogin'
 import Services from "../Service"
 import Contact from '../Contact'
 import Home from '../Home'
+const  AdminLogin = lazy(()=>import('./AdminLogin'))
+const  AlumniLogin = lazy(()=>import('./AlumniLogin'))
+const  StudentLogin = lazy(()=>import('./StudentLogin'))
 
 const Loginpage = () => {
   return (

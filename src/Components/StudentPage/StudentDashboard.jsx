@@ -82,7 +82,7 @@ const StudentDashboard = () => {
                 <div className="flex items-center gap-4 mb-4">
                   <h3 className="text-lg md:text-2xl font-bold text-white">Koushal Yadav</h3>
                   <div className="flex items-center gap-2 bg-gray-800/60 backdrop-blur-sm px-3 py-1 rounded-lg border border-gray-700">
-                    <span className="text-gray-300 text-sm">ID: 22</span>
+                    <div className="text-gray-300 text-sm">ID: 22</div>
                     <button
                       onClick={copyId}
                       className="text-gray-400 hover:text-white transition-colors duration-200"

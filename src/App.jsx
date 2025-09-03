@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import {Routes,Route,Link} from 'react-router'
 import Loginpage from './Components/LoginPage/Loginpage'
-import StudentLogin from './Components/LoginPage/StudentLogin'
-import AlumniLogin from './Components/LoginPage/AlumniLogin'
-import AdminLogin from './Components/LoginPage/AdminLogin'
+const  StudentLogin = lazy(()=>import('./Components/LoginPage/StudentLogin'))
+const  AlumniLogin = lazy(()=>import('./Components/LoginPage/AlumniLogin'))
+const  AdminLogin = lazy(()=>import('./Components/LoginPage/AdminLogin'))
 import Navbar from './Navbar'
-import StudentDashboard from './Components/StudentPage/StudentDashboard'
-import StudentExplorePage from './Components/StudentPage/StudentExplorePage'
+const StudentDashboard = lazy(()=>import('./Components/StudentPage/StudentDashboard'));
+const StudentExplorePage = lazy(()=>import('./Components/StudentPage/StudentExplorePage'));
 
 function App() {
   return (

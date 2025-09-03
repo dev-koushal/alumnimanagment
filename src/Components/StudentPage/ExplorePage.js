@@ -3,56 +3,56 @@ const ExplorePage = [
     {      
            id : 1,
            alumniImg : image,
-           alumniname : "Kunal Yadav",
+           alumniname : "koushal Yadav",
             yog : 2025,
             city : "Banglore",
             branch : "CSE",
-            company: "Amazone"
+            company: "Amazon"
     },
     {      
            id : 1,
            alumniImg : image,
-           alumniname : "Kunal Yadav",
+           alumniname : "koushal Yadav",
             yog : 2025,
             city : "Banglore",
             branch : "CSE",
-            company: "Amazone"
+            company: "Amazon"
     },
     {      
            id : 1,
            alumniImg : image,
-           alumniname : "Kunal Yadav",
+           alumniname : "koushal Yadav",
             yog : 2025,
             city : "Banglore",
             branch : "CSE",
-            company: "Amazone"
+            company: "Amazon"
     },
     {      
            id : 1,
            alumniImg : image,
-           alumniname : "Kunal Yadav",
+           alumniname : "koushal Yadav",
             yog : 2025,
             city : "Banglore",
             branch : "CSE",
-            company: "Amazone"
+            company: "Amazon"
     },
     {      
            id : 1,
            alumniImg : image,
-           alumniname : "Kunal Yadav",
+           alumniname : "koushal Yadav",
             yog : 2025,
             city : "Banglore",
             branch : "CSE",
-            company: "Amazone"
+            company: "Amazon"
     },
     {      
            id : 1,
            alumniImg : image,
-           alumniname : "Kunal Yadav",
+           alumniname : "koushal Yadav",
             yog : 2025,
             city : "Banglore",
             branch : "CSE",
-            company: "Amazone"
+            company: "Amazon"
     }
 ]
 

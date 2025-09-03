@@ -5,6 +5,8 @@ import StudenProfileButton from "./StudenProfileButton";
 
 function StudentExplorePage() {
   const navigate = useNavigate();
+  const userName = ExplorePage.alumniname;
+  console.log(userName);
   return (
     <>
         
@@ -15,8 +17,8 @@ function StudentExplorePage() {
         </button>
             <StudenProfileButton />
         </div>
-        
-        <form className="flex flex-wrap justify-center mt-2 gap-2 md:gap-8 mb-4">
+         <div className="bg-neutral">
+        <form className="flex flex-wrap justify-center mt-0.5 p-2 gap-2 md:gap-8 mb-4">
         <button className="btn" >More Filter</button>
         <input className="btn rounded-2xl " type="reset" value="Show All"/>
         <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="CSE"/>
@@ -53,6 +55,7 @@ function StudentExplorePage() {
             </div>
           </div>
         ))}
+      </div> 
       </div>
       <Outlet />
     </>
