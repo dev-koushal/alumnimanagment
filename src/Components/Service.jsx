@@ -3,7 +3,7 @@ import {motion} from "motion/react"
 
 function Service() {
   return (
-   <div id='services' className='min-h-screen mt-40 md:mt-20'>
+   <div id='services' className='min-h-screen mb-0 mt-40 md:mt-20'>
     <div className="">
     <section className="relative pt-12 overflow-hidden bg-black sm:pt-16">
       <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -47,7 +47,7 @@ function Service() {
               className="blur-3xl filter"
               style={{ filter: "blur(64px)" }}
               width="645"
-              height="413"
+              height="153"
               viewBox="0 0 645 413"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ function Service() {
           </div>
 
           <img
-            className="relative w-full max-w-5xl mx-auto"
+            className="relative w-full md:mb-0 mb-16 max-w-5xl mx-auto"
             src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/4/dashboard-mockup.png"
             alt=""
           />

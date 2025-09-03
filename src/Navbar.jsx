@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router'
+import { Link, Outlet, useNavigate } from 'react-router'
 import { motion } from "motion/react"
 function Navbar() {
+ const navigate=  useNavigate(); 
   return (
    <>
-   <motion.div initial={{y:-100,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}  className="navbar fixed bg-base-100 shadow-sm z-50">
+   <motion.div initial={{y:-100,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}  className="navbar fixed mt-2 h-12 rounded-full shadow-md shadow-gray-800 z-50 bg-clip-padding backdrop-filter  backdrop-blur bg-opacity-10 backdrop-saturate-100 backdrop-contrast-100  border-gray-500 
+        bg-[#80808030] text-[#8236c1] border-[1px] font-mono">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,22 +28,23 @@ function Navbar() {
         <li><a href='#contact'>Contact</a></li>
       </ul>
     </div>
-    <div className="btn btn-ghost text-xl"><Link to='/'>AMS</Link></div>
+    <div className="btn btn-ghost text-xl text-neutral hover:bg-white border-0 rounded-full"><Link to='/'>A.M.S</Link></div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-[18px]">
-      <ul className='flex gap-20'>
-      <li><a href='#home' >Home</a></li>
-      <li><a href='#services'>Services</a></li>
-      <li><a href='#contact'>Contact</a></li>
+      <ul className='flex gap-20 font-bold'>
+      <li><a href='#home' onClick={()=>navigate('/')} >Home</a></li>
+      <li><a href='#services ' onClick={()=>navigate('/')}>Services</a></li>
+      <li><a href='#contact' onClick={()=>navigate('/')}>Contact</a></li>
       </ul>
       <li>
         <details>
-          <summary className='shadow-[0_0_0_2px_white] rounded-full ml-80 mr-32'>Login/Register</summary>
+          <summary className='shadow-[0_0_0_1px_black] rounded-full ml-80 mr-32 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-0 backdrop-saturate-80 backdrop-contrast-150  border-gray-500 
+        bg-[#80808030]'>Login/Register</summary>
           <ul className="p-2 w-60 right-0 top-10 transition ease-in-out duration-1000">
-            <li> <Link to='Student'>Login as Student</Link></li>
-            <li><Link to='Admin'>Login as Admin</Link> </li>
-            <li><Link to='Alumni'>Login as Alumni</Link></li>
+            <li> <Link to='Student' className='text-white'>Login as Student</Link></li>
+            <li><Link to='Admin' className='text-white'>Login as Admin</Link> </li>
+            <li><Link to='Alumni' className='text-white'>Login as Alumni</Link></li>
           </ul>
         </details>
       </li>

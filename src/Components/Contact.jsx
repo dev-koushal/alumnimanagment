@@ -22,7 +22,7 @@ export default function Contact() {
   };
 
   return (
-    <div id='contact' className="min-h-screen bg-black flex items-center justify-center p-4 relative overflow-hidden">
+    <div id='contact' className="min-h-screen md:mt-0 -mt-60 bg-black flex items-center justify-center p-4 relative overflow-hidden">
       {/* Purple and Blue Gradient Flare */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-96 h-96 bg-gradient-to-r from-purple-600/30 via-blue-600/30 to-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
