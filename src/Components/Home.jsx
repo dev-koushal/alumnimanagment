@@ -16,13 +16,13 @@ const[popup,SetPop]=useState(false);
                         Connect and <br /> Collab  with <br />
                         <motion.div initial={{ x:-100  }} transition={{duration:1}} animate={{x:0,}}  className="relative inline-flex">
                             <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]"></span>
-                            <motion.h1  initial={{ x:-100  }} transition={{duration:1}} animate={{x:0}} className="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">Alumnis</motion.h1>
+                            <motion.h1  initial={{ x:100  }} transition={{duration:1}} animate={{x:0}} className="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">Alumnis</motion.h1>
                         </motion.div>
                     </h1>
 
-                    <motion.p  initial={{ x:-100  }} transition={{duration:1}} animate={{x:0}} className="mt-8 text-base text-black sm:text-xl">Now you can connect to any of your alumni and can take guidance from them to shape your future!!</motion.p>
+                    <motion.p  initial={{ x:100  }} transition={{duration:1}} animate={{x:0}} className="mt-8 text-base text-black sm:text-xl">Now you can connect to any of your alumni and can take guidance from them to shape your future!!</motion.p>
 
-                    <motion.div initial={{x:-100,opacity:0  }} transition={{duration:1}} animate={{x:0,opacity:1}} className="mt-10 sm:flex sm:items-center sm:space-x-8">
+                    <motion.div initial={{x:100,opacity:0  }} transition={{duration:1}} animate={{x:0,opacity:1}} className="mt-10 sm:flex sm:items-center sm:space-x-8">
                         <div title="" className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-[#1b222b] hover:bg-orange-600 focus:bg-[#1b222b] rounded-2xl cursor-pointer" role="button" onClick={()=>SetPop(!popup)}> Login </div>
                     </motion.div>
                    {
