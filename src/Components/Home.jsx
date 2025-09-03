@@ -23,7 +23,7 @@ const[popup,SetPop]=useState(false);
                     <motion.p  initial={{ x:-100  }} transition={{duration:1}} animate={{x:0}} className="mt-8 text-base text-black sm:text-xl">Now you can connect to any of your alumni and can take guidance from them to shape your future!!</motion.p>
 
                     <motion.div initial={{x:-100,opacity:0  }} transition={{duration:1}} animate={{x:0,opacity:1}} className="mt-10 sm:flex sm:items-center sm:space-x-8">
-                        <div title="" className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-[#1b222b] hover:bg-orange-600 focus:bg-[#1b222b] rounded-2xl cursor-pointer" role="button" onClick={()=>SetPop(!popup)}> Login </div>
+                        <div title="" className="inline-flex items-center justify-center px-10 py-2 md:py-4 text-base font-semibold text-white transition-all duration-200 bg-[#1b222b] hover:bg-orange-600 focus:bg-[#1b222b] rounded-2xl cursor-pointer" role="button" onClick={()=>SetPop(!popup)}> Login </div>
                     </motion.div>
                    {
                     popup? <div className="md:-translate-y-90 -translate-x-10 md:translate-x-32 z-50 absolute"><StudentLogin/></div> :null
