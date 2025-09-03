@@ -18,10 +18,11 @@ function App() {
             <Route path='/' element = {<Loginpage />} />
             <Route path='Student' element={<StudentLogin/>} />
             <Route path='Admin' element={<AdminLogin/>}/>
+            <Route path='Alumni' element={<AlumniLogin/>}/>
             </Route>
             <Route path='student/explore' element={<StudentExplorePage/>}></Route>
             <Route path='student/profile' element={<StudentDashboard/>} />
-            <Route path='Alumni' element={<AlumniLogin/>}/>
+            
            
          </Routes>
    </>
