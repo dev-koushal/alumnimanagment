@@ -30,10 +30,13 @@ will be adding backend soon
    ```bash
    git clone https://github.com/dev-koushal/alumnimanagment.git
    cd alumnimanagment
-
 ## Install dependencies:
+ ```bash
 npm install
+```
+## Start the development server:
+```bash
+npm run dev
 
-##Start the development server:
-npm start
+
 
