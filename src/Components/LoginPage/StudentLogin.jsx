@@ -6,7 +6,7 @@ const StudentLogin = () => {
     <>
       
        <motion.div initial={{opacity:0,width:0}} animate={{opacity:1,width:"100%"}} transition={{ease:"easeInOut"}} >
-         <fieldset className=" ease-in-out fieldset bg-base-200 border-base-300 m-2 md:m-0 rounded-box 
+         <fieldset className="mt-2 ease-in-out fieldset bg-base-200 border-base-300 m-2 md:m-0 rounded-box 
          w-sm md:w-md  h-[400px] border p-6">
           <h1 className="text-2xl">Student Login</h1> 
           <label className="label">Email</label>

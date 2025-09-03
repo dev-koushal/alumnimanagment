@@ -15,7 +15,7 @@ function Navbar() {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-2 w-52 p-2 shadow">
-       <li><a href='#home' >Home</a></li>
+       <li><a href='#home' onClick={()=>navigate('/')} >Home</a></li>
         <li>
           <a>Login</a>
           <ul className="p-2">
@@ -24,8 +24,8 @@ function Navbar() {
             <li><Link to='Alumni'>Login as Alumni</Link></li>
           </ul>
         </li>
-        <li><a href='#services'>Services</a></li>
-        <li><a href='#contact'>Contact</a></li>
+        <li><a href='#services ' onClick={()=>navigate('/')}>Services</a></li>
+      <li><a href='#contact' onClick={()=>navigate('/')}>Contact</a></li>
       </ul>
     </div>
     <div className="btn btn-ghost text-xl text-neutral hover:bg-white border-0 rounded-full"><Link to='/'>A.M.S</Link></div>
@@ -42,7 +42,7 @@ function Navbar() {
           <summary className='shadow-[0_0_0_1px_black] rounded-full ml-80 mr-32 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-0 backdrop-saturate-80 backdrop-contrast-150  border-gray-500 
         bg-[#80808030]'>Login/Register</summary>
           <ul className="p-2 w-60 right-0 top-10 transition ease-in-out duration-1000">
-            <li> <Link to='Student' className='text-white'>Login as Student</Link></li>
+            <li> <Link to='studentcard' className='text-white'>Login as Student</Link></li>
             <li><Link to='Admin' className='text-white'>Login as Admin</Link> </li>
             <li><Link to='Alumni' className='text-white'>Login as Alumni</Link></li>
           </ul>

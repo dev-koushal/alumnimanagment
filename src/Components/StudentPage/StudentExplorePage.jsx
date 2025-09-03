@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, Link, useNavigate } from "react-router";
 import ExplorePage from "./ExplorePage";
 import StudenProfileButton from "./StudenProfileButton";
@@ -6,7 +6,13 @@ import StudenProfileButton from "./StudenProfileButton";
 function StudentExplorePage() {
   const navigate = useNavigate();
   const userName = ExplorePage.alumniname;
-  console.log(userName);
+  const [cse,SetCse] = useState(false);
+  
+
+ 
+
+
+
   return (
     <>
         
@@ -24,9 +30,7 @@ function StudentExplorePage() {
         <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="CSE"/>
         <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2025"/>
         <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2024"/>
-        <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="CSE"/>
-        <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2025"/>
-        <input className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="2024"/>
+        
         </form>
         
 
