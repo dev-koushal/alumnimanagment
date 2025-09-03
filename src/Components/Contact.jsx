@@ -40,7 +40,7 @@ export default function Contact() {
             Contact College
           </h1>
           <p className="text-gray-300 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similiqu
+            Drop the issue with Login or Register
           </p>
         </motion.div>
 

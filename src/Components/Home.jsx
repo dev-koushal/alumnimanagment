@@ -4,10 +4,10 @@ import { motion } from "motion/react"
 function Home() {
   return (
     <div id="home" className="h-screen bg-blue-100">
-    <section className="py-10 sm:py-16 lg:py-24 absolute md:top-8 lg:top-10 top-10 left-6 md:ml-18">
+    <section className="py-10 sm:py-16 lg:py-24 md:top-8 lg:top-10 top-10 left-6 md:ml-18">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="grid items-center grid-cols-1 gap-20 lg:grid-cols-2">
-                <motion.div initial={{ x:-200,y:50  }} transition={{duration:1}} animate={{x:0,y:50}}>
+                <motion.div initial={{ x:-200, }} transition={{duration:1}} animate={{x:0,}}>
                     <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
                         Connect and <br /> Collab  with <br />
                         <motion.div initial={{ x:-100  }} transition={{duration:1}} animate={{x:0,}}  className="relative inline-flex">
