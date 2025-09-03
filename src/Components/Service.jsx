@@ -3,7 +3,7 @@ import {motion} from "motion/react"
 
 function Service() {
   return (
-   <div id='services' className='h-screen mt-40 md:mt-20 mb-40 md:mb-0 '>
+   <div id='services' className='min-h-screen mt-40 md:mt-20'>
     <div className="">
     <section className="relative pt-12 overflow-hidden bg-black sm:pt-16">
       <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">

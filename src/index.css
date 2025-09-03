@@ -7,8 +7,11 @@ html,body{
     padding: 0;
     background-color: whitesmoke;
     scroll-behavior: smooth;
-
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
 }
+
+
 root{
     --primarycolor : "white";
     --secondarycolor : "blue";

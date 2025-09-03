@@ -10,7 +10,7 @@ const  StudentLogin = lazy(()=>import('./StudentLogin'))
 const Loginpage = () => {
   return (
     <>
-    <div className='bg-blue-100'>
+    <div className='bg-blue-100 overflow-x-hidden max-w-full'>
     <Home />
     <Services />
     <Contact />

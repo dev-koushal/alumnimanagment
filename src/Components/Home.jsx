@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 import {Link} from "react-router"
 function Home() {
   return (
-    <div id="home" className="h-screen bg-blue-100">
+    <div id="home" className="min-h-screen overflow-hidden bg-blue-100">
     <section className="py-10 sm:py-16 lg:py-24 absolute md:top-8 lg:top-10 top-10 left-6 md:ml-18">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="grid items-center grid-cols-1 gap-20 lg:grid-cols-2">
