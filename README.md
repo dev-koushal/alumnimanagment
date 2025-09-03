@@ -4,13 +4,15 @@
 
 ## Project Overview
 
-Frontend-only Alumni Management System built with **React**.  
-No backend. Data is fetched from mock APIs / hardcoded JSON for now.  
+Alumni Management System built with **React**.  
+Data is fetched from mock/local APIs / hardcoded JSON for now.  
 will be adding backend soon
 
 ## Tech Stack
 
 - **React** (with hooks & router)
+-  **React-Router**
+-  **Redux Toolkit** 
 - **TailwindCSS** (styling)
 - **Mock API / Hardcoded data** (temporary data source)
 
@@ -28,10 +30,13 @@ will be adding backend soon
    ```bash
    git clone https://github.com/dev-koushal/alumnimanagment.git
    cd alumnimanagment
-
 ## Install dependencies:
+ ```bash
 npm install
+```
+## Start the development server:
+```bash
+npm run dev
 
-##Start the development server:
-npm start
+
 
