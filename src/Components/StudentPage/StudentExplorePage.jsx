@@ -23,7 +23,7 @@ function StudentExplorePage() {
         </button>
             <StudenProfileButton />
         </div>
-         <div className="bg-neutral">
+         <div className="bg-neutral min-h-screen">
         <form className="flex flex-wrap justify-center mt-0.5 p-2 gap-2 md:gap-8 mb-4">
         <button className="btn" >More Filter</button>
         <input className="btn rounded-2xl " type="reset" value="Show All"/>
@@ -40,7 +40,7 @@ function StudentExplorePage() {
             <div className="card bg-base-100 md:w-96 w-80 shadow-sm">
               <figure className="px-10 pt-10">
                 <img
-                  src={alumni.alumniImg}
+                  
                   alt="Alumni Image"
                   className="rounded-xl"
                 />

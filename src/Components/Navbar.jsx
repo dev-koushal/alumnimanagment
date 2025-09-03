@@ -19,7 +19,7 @@ function Navbar() {
         <li>
           <a>Login</a>
           <ul className="p-2">
-             <li> <Link to='Student'>Login as Student</Link></li>
+             <li> <Link to='studentcard'>Login as Student</Link></li>
             <li><Link to='Admin'>Login as Admin</Link> </li>
             <li><Link to='Alumni'>Login as Alumni</Link></li>
           </ul>
