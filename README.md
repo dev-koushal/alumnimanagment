@@ -6,7 +6,7 @@
 
 Frontend-only Alumni Management System built with **React**.  
 No backend. Data is fetched from mock APIs / hardcoded JSON for now.  
-This is strictly a **UI prototype** — not production ready.
+will be adding backend soon
 
 ## Tech Stack
 
