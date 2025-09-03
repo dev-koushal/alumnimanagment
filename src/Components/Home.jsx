@@ -11,7 +11,7 @@ const[popup,SetPop]=useState(false);
     <section className="py-10 sm:py-16 lg:py-24 absolute md:top-8 lg:top-10 top-10 left-6 md:ml-18">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="grid items-center grid-cols-1 gap-20 lg:grid-cols-2">
-                <motion.div initial={{ x:-200,y:0,scale:0,opacity:0}} transition={{duration:1}} animate={{x:0,y:0,scale:1,opacity:1}}>
+                <motion.div initial={{ x:-200,y:0,scale:0,opacity:0}} transition={{duration:1,delay:1}} animate={{x:0,y:0,scale:1,opacity:1}}>
                     <h1  className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
                         Connect and <br /> Collab  with <br />
                         <motion.div initial={{ x:-100  }} transition={{duration:1}} animate={{x:0,}}  className="relative inline-flex">
