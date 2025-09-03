@@ -81,7 +81,7 @@ function Service() {
           </div>
 
           <img
-            className="relative w-full md:mb-0 mb-30 max-w-5xl mx-auto"
+            className="relative w-full md:mb-0 mb-30 md:pb-0 pb-20 max-w-5xl mx-auto"
             src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/4/dashboard-mockup.png"
             alt=""
           />
