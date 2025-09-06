@@ -11,7 +11,7 @@ const StudentLoginCard = () => {
 
           <label className="label">Password</label>
           <input type="password" className="input w-full" placeholder="Password" />
-         <button className="btn btn-neutral mt-4"><Link to='/student/profile'> Bypass Login</Link></button>
+         <button className="btn btn-neutral mt-4"><Link to='student/explore'> Bypass Login</Link></button>
           <button className="btn btn-neutral mt-4">Login</button>
           <button className="btn btn-neutral mt-4"> Register with Google</button>
         </fieldset>
