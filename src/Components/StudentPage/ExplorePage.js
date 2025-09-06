@@ -11,7 +11,7 @@ const ExplorePage = [
     },
     {
         id : 2,
-         alumniImg : image,
+         alumniImg : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYEI5nU2R_FOfpmEBKHJW7TXrT7PKTdmtAw&s',
         alumniname : "Fodu Bhiya",
         yog : 2024,
         city : "Chennai",
@@ -53,8 +53,35 @@ const ExplorePage = [
         city : "Delhi", 
         branch : "IT",
         company: "Facebook"
-    }
-    
+    },
+    {
+        id : 7,
+         alumniImg : image,
+        alumniname : "Rohit Sharma",
+        yog : 2019,
+        city : "Chennai",
+        branch : "CSE",
+        company: "Apple"
+    },
+    {       
+        id : 8,
+            alumniImg : image,
+            alumniname : "MS Dhoni",
+            yog : 2018,
+            city : "Ranchi",
+            branch : "ECE",
+            company: "IBM"
+    },
+    {
+        id : 9,
+         alumniImg : image,
+        alumniname : "Jasprit Bumrah",
+        yog : 2017,
+        city : "Ahmedabad",
+            
+        branch : "IT",
+        company: "Oracle"
+    },
 ]
 
 export default ExplorePage
