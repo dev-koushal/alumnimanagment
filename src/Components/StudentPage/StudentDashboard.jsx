@@ -24,11 +24,7 @@ const StudentDashboard = () => {
     }));
   };
 
-  const copyId = () => {
-    navigator.clipboard.writeText('22');
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+  
 
   const handleSave = () => {
     console.log('Saving profile data:', formData);
@@ -57,17 +53,17 @@ const StudentDashboard = () => {
         ></div>
       </div>
 
-      <div className="relative z-10 p-6">
+      <div className="relative z-10 pt-6">
         <div className="max-w-6xl mx-auto">
         
           <div className="flex items-center justify-between mb-8">
-            <h1 className=" text-xl md:text-3xl font-bold text-white">Student Profile</h1>
+            <h1 className=" text-xl md:text-3xl font-bold text-white">Your Details</h1>
             <div className="flex gap-4">
-              <div onClick={()=>navigate('/student/explore')} id='explore' className=' btn w-30 md:w-80 h-10 md:h-12 ' >Explore</div>
+              <div onClick={()=>navigate('/student/explore')} id='explore' className=' btn w-30 md:w-80 h-10 md:h-12' >Explore</div>
             </div>
           </div>
 
-          <div className="bg-gray-900/60 backdrop-blur-md rounded-2xl p-8 border border-gray-800/50 shadow-2xl">
+          <div className="bg-gray-900/60 backdrop-blur-md rounded-2xl p-4 border border-gray-800/50 shadow-2xl">
             <h2 className="text-xl font-semibold text-white mb-6 border-b border-gray-800 pb-4">Basic Info</h2>
      
             <div className="flex items-start gap-6 mb-8">
@@ -81,20 +77,10 @@ const StudentDashboard = () => {
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-4">
                   <h3 className="text-lg md:text-2xl font-bold text-white">Koushal Yadav</h3>
-                  <div className="flex items-center gap-2 bg-gray-800/60 backdrop-blur-sm px-3 py-1 rounded-lg border border-gray-700">
-                    <div className="text-gray-300 text-sm">ID: 22</div>
-                    <button
-                      onClick={copyId}
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
-                    >
-                      <Copy size={14} />
-                    </button>
-                    {copied && <span className="text-green-400 text-xs">Copied!</span>}
-                  </div>
                 </div>
-                <button className="flex items-center gap-2 px-4 py-2 bg-gray-800/60 backdrop-blur-sm text-gray-300 rounded-lg hover:bg-gray-700/60 transition-all duration-300 border border-gray-700">
+                <button className="flex items-center gap-2 px-2 md:px-4  py-0.5 md:py-2 bg-gray-800/60 backdrop-blur-sm text-gray-300 rounded-lg hover:bg-gray-700/60 transition-all duration-300 border border-gray-700">
                   <Lock size={16} />
-                  CHANGE PASSWORD
+                  Change Password
                 </button>
               </div>
             </div>
