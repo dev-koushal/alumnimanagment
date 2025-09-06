@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Outlet, Link, useNavigate, useParams } from "react-router";
 import ExplorePage from "./ExplorePage";
 import StudenProfileButton from "./StudenProfileButton";
-
+import {easeIn, easeInOut, motion} from "motion/react"
 function StudentExplorePage() {
   const navigate = useNavigate();
   const [all,setAll] = useState(true);
@@ -49,7 +49,7 @@ const FilterYear = ()=>{
         <div className=" grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-6 md:m-10">
         {filterCard.map((alumni, index) => (
           <div key={index}>
-            <div className="card flex flex-row md:block bg-base-100 hover:scale-[1.01] transition-all ease-in-out duration-300 shadow-md shadow-gray-600 hover:shadow-gray-400">
+            <motion.div initial={{opacity:0,scale:0.8}} whileInView={{opacity:1,scale:1}} transition={{duration:0.2}} viewport={{once:true}} className="card flex flex-row md:block bg-base-100 hover:scale-[1.01] transition-all ease-in-out duration-300 shadow-md shadow-gray-800 hover:shadow-[#605dff]">
               <figure className="">
                 <img 
                   src={alumni.alumniImg}
@@ -68,7 +68,7 @@ const FilterYear = ()=>{
                   <button onClick={()=>PassAlumniProfile(alumni.id)} className="btn btn-primary hover:scale-[1.1] -mb-10 rounded-full hover:shadow-[1px_2px_0_0] hover:shadow-[#605dff] transition ease-in-out  duration-300">View Profile</button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div> 
