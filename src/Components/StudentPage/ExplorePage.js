@@ -16,7 +16,9 @@ const ExplorePage = [
         yog : 2024,
         city : "Chennai",
         branch : "ECE",
-        company: "ICT"
+        position : "SDE-2",
+        company: "ICT",
+        bio:"main padta tha OCT mein ab main ICT mein kaam krta hu tum dekh lo kya krna hai tumhe"
     },
     {
         id : 3,

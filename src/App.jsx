@@ -8,7 +8,7 @@ const  AdminLogin = lazy(()=>import('./Components/LoginPage/AdminLogin'))
 import Navbar from './Components/Navbar'
 const StudentDashboard = lazy(()=>import('./Components/StudentPage/StudentDashboard'));
 const StudentExplorePage = lazy(()=>import('./Components/StudentPage/StudentExplorePage'));
-
+import AlumniProfile from './Components/AlumniPages/AlumniProfile'
 function App() {
   return (
    <>
@@ -24,7 +24,7 @@ function App() {
             </Route>
             <Route path='student/explore' element={<StudentExplorePage/>}></Route>
             <Route path='student/profile' element={<StudentDashboard/>} />
-            <Route path="*" element={<Loginpage />} />
+            <Route path='alumni/profile/:id'element={<AlumniProfile/>}/>
          </Routes>
    </>
   )
