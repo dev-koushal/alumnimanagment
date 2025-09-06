@@ -58,7 +58,7 @@ const FilterYear = ()=>{
                    {alumni.branch} ● {alumni.yog} ● {alumni.city} 
                 </p>
                 <div className="card-actions">
-                  <button className="btn btn-primary hover:scale-[1.1] -mb-10 rounded-full hover:shadow-md shadow-red-200 transition ease-in-out  duration-300">Connect</button>
+                  <button className="btn btn-primary hover:scale-[1.1] -mb-10 rounded-full hover:shadow-[1px_2px_0_0] hover:shadow-[#605dff] transition ease-in-out  duration-300">Connect</button>
                 </div>
               </div>
             </div>
@@ -66,7 +66,6 @@ const FilterYear = ()=>{
         ))}
       </div> 
       </div>
-      <Outlet />
     </>
   );
 }
