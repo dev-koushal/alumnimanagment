@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BannerImg from '../assets/Banner.jpg'
+import BannerImg from '../assets/Banner.avif'
 import { motion } from "motion/react"
 import {Link} from "react-router"
 import StudentLogin from "./LoginPage/StudentLogin";

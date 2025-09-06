@@ -32,7 +32,7 @@ const FilterYear = ()=>{
         </button></Link>
             <StudenProfileButton />
         </div>
-         <div className="bg-neutral min-h-screen">
+         <div className="bg-neutral min-h-screen ">
         <form className="flex flex-wrap justify-center mt-0.5 p-2 gap-2 md:gap-8 mb-4">
         
         <input onClick={()=>setFilterCard(ExplorePage)} className="btn rounded-2xl " type="reset" value="Show All"/>
@@ -42,7 +42,7 @@ const FilterYear = ()=>{
         </form>
         {/* cardddddesssss */}
 
-        <div className=" grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-10">
+        <div className=" grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-6 md:m-10">
         {filterCard.map((alumni, index) => (
           <div key={index}>
             <div className="card flex flex-row md:block bg-base-100 hover:scale-[1.01] transition-all ease-in-out duration-300 shadow-md shadow-gray-600 hover:shadow-gray-400">

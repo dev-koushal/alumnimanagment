@@ -7,7 +7,9 @@ const ExplorePage = [
             yog : 2025,
             city : "Banglore",
             branch : "CSE",
-            company: "Amazon"
+            company: "Amazon",
+            bio :  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci asperiores dicta magni, porro eveniet?",
+            skills : ["c++","java","Mern","Gen-AI","CI/CD","System Design"]
     },
     {
         id : 2,
@@ -16,9 +18,39 @@ const ExplorePage = [
         yog : 2024,
         city : "Chennai",
         branch : "ECE",
-        position : "SDE-2",
-        company: "ICT",
-        bio:"main padta tha OCT mein ab main ICT mein kaam krta hu tum dekh lo kya krna hai tumhe"
+        position : "Software Engineer II",
+        company: "Google",
+        bio:"main padta tha OCT mein ab main ICT mein kaam krta hu tum dekh lo kya krna hai tumhe     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci asperiores dicta magni, porro eveniet? main padta tha OCT mein ab main ICT mein kaam krta hu tum dekh lo kya krna hai tumhe     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci asperiores dicta magni, porro eveniet?",
+        skills :[ "java","hmtlt","CPP","Excel"],
+        experiences: [
+      {
+        id: 1,
+        company: "Google Inc.",
+        position: "Senior Software Engineer",
+        duration: "2022 - Present",
+        location: "Mountain View, CA",
+        description: "Leading development of microservices architecture for Google Cloud Platform. Mentoring junior developers and contributing to open-source projects.",
+        achievements: ["Improved system performance by 40%", "Led team of 6 engineers", "Implemented CI/CD pipeline"]
+      },
+      {
+        id: 2,
+        company: "Microsoft",
+        position: "Software Engineer II",
+        duration: "2020 - 2022",
+        location: "Seattle, WA",
+        description: "Developed and maintained Azure services. Worked on real-time data processing systems handling millions of requests per day.",
+        achievements: ["Reduced latency by 30%", "Developed 5 major features", "Received Employee of the Quarter award"]
+      },
+      {
+        id: 3,
+        company: "Facebook (Meta)",
+        position: "Software Engineer Intern",
+        duration: "Summer 2019",
+        location: "Menlo Park, CA",
+        description: "Interned with the Instagram team working on backend infrastructure. Contributed to photo processing pipeline optimization.",
+        achievements: ["Optimized image processing by 25%", "Full-time offer received", "Presented to senior leadership"]
+      }
+    ],
     },
     {
         id : 3,

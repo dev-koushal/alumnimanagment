@@ -63,7 +63,7 @@ const StudentDashboard = () => {
           <div className="flex items-center justify-between mb-8">
             <h1 className=" text-xl md:text-3xl font-bold text-white">Student Profile</h1>
             <div className="flex gap-4">
-              <div onClick={()=>navigate('/student/explore')} id='explore' className=' btn w-30 md:w-80 h-10 md:h-12 animate-bounce ' >Explore</div>
+              <div onClick={()=>navigate('/student/explore')} id='explore' className=' btn w-30 md:w-80 h-10 md:h-12 ' >Explore</div>
             </div>
           </div>
 

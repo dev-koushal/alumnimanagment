@@ -22,7 +22,7 @@ function App() {
              <Route path='studentcard' element={<StudentLoginCard/>}></Route>
              <Route path='Alumni' element={<AlumniLogin/>}/> 
             </Route>
-            <Route path='student/explore' element={<StudentExplorePage/>}></Route>
+            <Route path='/student/explore' element={<StudentExplorePage/>}></Route>
             <Route path='student/profile' element={<StudentDashboard/>} />
             <Route path='alumni/profile/:id'element={<AlumniProfile/>}/>
          </Routes>
