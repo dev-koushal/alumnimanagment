@@ -25,18 +25,18 @@ const FilterYear = ()=>{
   return (
     <>
         
-        <div className="w-full flex justify-between gap-4 items-center bg-neutral">
+        <div className="w-full flex justify-between gap-4 items-center bg-gradient-to-b from-[#605dff] to-gray-900">
           <Link to='/'><button className="btn ml-2  bg-white text-black border-[#e5e5e5]">
         <svg aria-label="Email icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="black"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
         Logout
         </button></Link>
             <div className="flex justify-center ">
-              <h1 className="mt-4 mr-2 font-serif">Go to Profile</h1>
+              <h1 className="mt-4 mr-4 font-serif">Go to Profile</h1>
             <StudenProfileButton />
             </div>
         </div>
-         <div className="bg-blue-100 min-h-screen ">
-        <form className="flex flex-wrap justify-center  mt-0.5 p-2 gap-2 md:gap-8 mb-4">
+         <div className="bg-gray-900 min-h-screen ">
+        <form className="flex flex-wrap justify-center p-2 gap-2 md:gap-8 mb-4">
         
         <input onClick={()=>setFilterCard(ExplorePage)} className="btn rounded-2xl " type="reset" value="Show All"/>
         <input onClick={()=>FilterCse()} className="btn rounded-2xl" type="checkbox" name="frameworks" aria-label="CSE"/>

@@ -13,7 +13,7 @@ function StudenProfileButton() {
   return (
     <div
       onClick={() => navigate("/student/profile")}
-      className="btn btn-circle btn-secondary hover:border-2 btn-dash w-14 h-14 overflow-hidden mr-4 mt-1 mb-1"
+      className="btn btn-circle btn-white hover:border-2 border-2 btn-outline w-14 h-14 overflow-hidden mr-4 mt-1 mb-1"
     >
       <img className="" src={image} alt="alumniImage" />
     </div>

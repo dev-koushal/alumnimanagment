@@ -39,8 +39,8 @@ function AlumniProfile() {
                 {alumni.position} at {alumni.company}
               </p>
 
-              <div className="flex flex-wrap gap-4 text-sm text-blue-100 mb-4">
-                <div className="flex items-center gap-1">
+              <div className="flex flex-wrap gap-4 text-sm text-blue-100 mb-4 ">
+                <div className="flex items-center gap-1 ">
                   <BookOpen className="w-4 h-4" />
                   <span>{alumni.branch}</span>
                 </div>
@@ -76,8 +76,8 @@ function AlumniProfile() {
       </div>
       
       {/* Skills and about section */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div className="lg:col-span-3 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
+          <div className="lg:col-span-3  hover:shadow-lg transition-all ease-in-out duration-100 hover:shadow-gray-700 ">
             <div className="bg-white rounded-xl shadow-sm border p-4">
               <h2 className="text-2xl font-bold text-gray-800 ">About</h2>
               <p className="text-gray-600 leading-relaxed">{alumni.bio}</p>
