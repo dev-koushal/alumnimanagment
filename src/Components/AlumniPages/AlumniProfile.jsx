@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  MapPin,
-  Calendar,
-  Building,
-  Mail,
-  Phone,
-  Linkedin,
-  Github,
-  Award,
-  Users,
-  BookOpen,
-  HeartHandshakeIcon,
-  MessageCircleDashed,
+import {MapPin,Calendar,Building,Mail,Phone,Linkedin,Github,Award,Users,BookOpen,HeartHandshakeIcon, MessageCircleDashed,
 } from "lucide-react";
 import { Link } from "react-router";
 import { useParams } from "react-router";
