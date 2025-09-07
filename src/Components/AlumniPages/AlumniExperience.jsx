@@ -12,11 +12,11 @@ function AlumniExperience({ alumni }) {
         {(alumni.experiences)?alumni.experiences.map((exp) => (
           <div
             key={exp.id}
-            className="border-l-4 border-blue-200 pl-6 relative"
+            className="border-l-4 border-blue-200 pl-6 relative "
           >
             <div className="absolute -left-2.5 top-2 w-4 h-4 bg-blue-600 rounded-full"></div>
-            <div className="bg-gray-50 rounded-lg p-5">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+            <div className="bg-gray-50 rounded-lg p-5 hover:shadow-xl transition-all ease-in-out duration-50 hover:shadow-gray-700">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3 ">
                 <h3 className="text-xl font-semibold text-gray-800">
                   {exp.position}
                 </h3>
