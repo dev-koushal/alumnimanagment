@@ -1,10 +1,10 @@
-# Alumni Management System (UI Only)
+# Alumni Management System 
 
 **Repo:** [dev-koushal/alumnimanagment](https://github.com/dev-koushal/alumnimanagment)
 
 ## Project Overview
 
-Alumni Management System built with **React**.  
+Alumni Management System built with **React** to optimise performance and take a lag free experiences. 
 Data is fetched from mock/local APIs / hardcoded JSON for now.  
 
 ## Tech Stack
@@ -13,7 +13,9 @@ Data is fetched from mock/local APIs / hardcoded JSON for now.
 -  **React-Router**
 -  **Redux Toolkit** 
 - **TailwindCSS** (styling)
-- **Mock API / Hardcoded data** (temporary data source)
+- **NodeJS**
+- **ExpressJS**
+- **MongoDB**
 
 ## Features (UI Level)
 
