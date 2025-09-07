@@ -4,7 +4,10 @@ import { Outlet, useNavigate } from 'react-router';
 import Image from './image.png'
 import './StudentDashboard.css'
 const StudentDashboard = () => {
-  const [formData, setFormData] = useState({
+const navigate = useNavigate();
+  
+
+const [formData, setFormData] = useState({
     firstName: 'Koushal',
     lastName: 'Yadav',
     department: 'CSE',
@@ -15,8 +18,7 @@ const StudentDashboard = () => {
     address: 'Indrapuri Bhopal, India'
   });
 
-  const [copied, setCopied] = useState(false);
-  const navigate = useNavigate();
+  
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
       ...prev,
@@ -25,10 +27,20 @@ const StudentDashboard = () => {
   };
 
   
+const handleSave = () => {
+  localStorage.setItem("firstName",formData.firstName );
+};
 
-  const handleSave = () => {
-    console.log('Saving profile data:', formData);
-  };
+  
+let getName = () =>{
+    const name = localStorage.getItem("firstName");
+  if(name != ""){
+     return name;
+  }else{
+    
+  }
+  }
+
 
   const handleCancel = () => {
     console.log('Cancelled changes');
@@ -84,14 +96,13 @@ const StudentDashboard = () => {
                 </button>
               </div>
             </div>
-
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div>
                 <label className="block text-gray-300 text-sm font-medium mb-2">First Name:</label>
                 <input
                   type="text"
-                  value={formData.firstName}
+                  value={getName()}
                   onChange={(e) => handleInputChange('firstName', e.target.value)}
                   className="w-full px-4 py-3 bg-gray-800/60 backdrop-blur-sm border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
                 />
@@ -215,7 +226,7 @@ const StudentDashboard = () => {
               </div>
             </div>
             <button
-                onClick={handleSave}
+                onClick={()=>handleSave()}
                 className="mt-2 py-3 hover:cursor-pointer hover:bg-white px-9 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
               >
                 SAVE

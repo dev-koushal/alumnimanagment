@@ -7,6 +7,7 @@ import ExplorePage from "../StudentPage/ExplorePage";
 import AlumniExperience from "./AlumniExperience";
 import AlumniSocialLInks from "./AlumniSocialLInks";
 import AlumniSkill from "./AlumniSkill";
+import ChatDiscussion from "../CommonComponents/ChatDiscussion";
 function AlumniProfile() {
   const { id } = useParams();
   const alumni = ExplorePage.find((a) => a.id == id);
@@ -30,6 +31,7 @@ function AlumniProfile() {
               />
               <div className="absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
             </div>
+
             {/* Basic Info */}
             <div className="">
               <h1 className="text-2xl md:text-4xl font-bold mb-1">
@@ -38,7 +40,10 @@ function AlumniProfile() {
               <p className="text-md text-blue-100 mb-3">
                 {alumni.position} at {alumni.company}
               </p>
-
+               {/* Chat discussion popUP */}
+      <div>
+        <ChatDiscussion/>
+      </div>
               <div className="flex flex-wrap gap-4 text-sm text-blue-100 mb-4 ">
                 <div className="flex items-center gap-1 ">
                   <BookOpen className="w-4 h-4" />
@@ -68,6 +73,7 @@ function AlumniProfile() {
         <span className="inline ">Connect Now</span>
       </button>
       </div>
+     
       <div className="bg-blue-200 rounded-full">
         <button className=" md:hidden flex items-center gap-2 cursor-pointer text-blue-600 w-full px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors mb-4 ">
       <MessageCircleDashed className="w-7 h-7 text-shadow-blue-950 "  />
@@ -88,6 +94,7 @@ function AlumniProfile() {
         </div>
         <AlumniExperience alumni={alumni} />
       </div>
+
     </div>
   );
 }

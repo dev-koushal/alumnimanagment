@@ -3,7 +3,7 @@ import React from "react";
 
 function AlumniExperience({ alumni }) {
   return (
-    <div className="bg-white rounded-xl shadow-sm border p-6 mt-4  hover:shadow-2xl transition-all ease-in-out duration-100 hover:shadow-gray-700">
+    <div className="bg-white rounded-xl shadow-sm  border p-6 mt-4  hover:shadow-2xl transition-all ease-in-out duration-100 hover:shadow-gray-700">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
         <Building className="w-6 h-6 text-blue-600" />
         Experience
@@ -15,7 +15,7 @@ function AlumniExperience({ alumni }) {
             className="border-l-4 border-blue-200 pl-6 relative "
           >
             <div className="absolute -left-2.5 top-2 w-4 h-4 bg-blue-600 rounded-full"></div>
-            <div className="bg-gray-50 rounded-lg p-5 hover:shadow-xl transition-all ease-in-out duration-50 hover:shadow-gray-700">
+            <div className="bg-gray-50 rounded-lg p-5 hover:shadow-md transition-all ease-in-out duration-50 hover:shadow-gray-700 hover:scale-[1.02]">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3 ">
                 <h3 className="text-xl font-semibold text-gray-800">
                   {exp.position}
