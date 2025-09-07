@@ -6,7 +6,6 @@
 
 Alumni Management System built with **React**.  
 Data is fetched from mock/local APIs / hardcoded JSON for now.  
-will be adding backend soon
 
 ## Tech Stack
 
