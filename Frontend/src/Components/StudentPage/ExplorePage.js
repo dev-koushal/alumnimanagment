@@ -1,121 +1,304 @@
-import image from "./image.png"
+import image from './image.png'  
 const ExplorePage = [
-    {      
-           id : 1,
-           alumniImg : image,
-           alumniname : "koushal Yadav",
-            yog : 2025,
-            city : "Banglore",
-            branch : "CSE",
-            company: "Amazon",
-            bio :  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci asperiores dicta magni, porro eveniet?",
-            skills : ["c++","java","Mern","Gen-AI","CI/CD","System Design"]
-    },
-    {
-        id : 2,
-         alumniImg : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYEI5nU2R_FOfpmEBKHJW7TXrT7PKTdmtAw&s',
-        alumniname : "Fodu Bhiya",
-        yog : 2024,
-        city : "Chennai",
-        branch : "ECE",
-        position : "Software Engineer II",
-        company: "Google",
-        bio:"main padta tha OCT mein ab main ICT mein kaam krta hu tum dekh lo kya krna hai tumhe     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci asperiores dicta magni, porro eveniet? main padta tha OCT mein ab main ICT mein kaam krta hu tum dekh lo kya krna hai tumhe     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci asperiores dicta magni, porro eveniet?",
-        skills :[ "java","hmtlt","CPP","Excel"],
-        experiences: [
+
+  {
+    id: 1,
+    alumniImg: image,
+    alumniname: "Rohan Sharma",
+    active:false,
+    yog: 2023,
+    city: "Bengaluru",
+    branch: "CSE",
+    position: "Software Engineer",
+    company: "TCS",
+    bio: "Graduated from OCT, now working at TCS on large-scale enterprise applications. Passionate about backend systems and databases.",
+    skills: ["Java", "Spring Boot", "MySQL", "Docker"],
+    experiences: [
       {
         id: 1,
-        company: "Google Inc.",
-        position: "Senior Software Engineer",
-        duration: "2022 - Present",
-        location: "Mountain View, CA",
-        description: "Leading development of microservices architecture for Google Cloud Platform. Mentoring junior developers and contributing to open-source projects.",
-        achievements: ["Improved system performance by 40%", "Led team of 6 engineers", "Implemented CI/CD pipeline"]
+        company: "TCS",
+        position: "Software Engineer",
+        duration: "2023 - Present",
+        location: "Bengaluru, India",
+        description: "Building enterprise-level applications for banking clients. Focused on backend APIs and database optimization.",
+        achievements: ["Reduced query time by 35%", "Worked on high-value banking modules", "Received Spot Award twice"]
       },
       {
         id: 2,
-        company: "Microsoft",
-        position: "Software Engineer II",
-        duration: "2020 - 2022",
-        location: "Seattle, WA",
-        description: "Developed and maintained Azure services. Worked on real-time data processing systems handling millions of requests per day.",
-        achievements: ["Reduced latency by 30%", "Developed 5 major features", "Received Employee of the Quarter award"]
+        company: "Infosys",
+        position: "Intern",
+        duration: "Jan 2023 - May 2023",
+        location: "Pune, India",
+        description: "Worked on internal tools for automation and testing pipelines.",
+        achievements: ["Automated reporting system", "Deployed scripts used company-wide"]
+      }
+    ]
+  },
+  {
+    id: 2,
+    alumniImg: image,
+    alumniname: "Sneha Verma",
+    active:true,
+    yog: 2022,
+    city: "Hyderabad",
+    branch: "IT",
+    position: "Associate Consultant",
+    company: "Wipro",
+    bio: "From OCT to Wipro – journey of a coder turned consultant. I work with clients across healthcare and retail domains.",
+    skills: ["Python", "Django", "React", "PostgreSQL"],
+    experiences: [
+      {
+        id: 1,
+        company: "Wipro",
+        position: "Associate Consultant",
+        duration: "2022 - Present",
+        location: "Hyderabad, India",
+        description: "Developing client-facing applications and ensuring system integrations across multiple platforms.",
+        achievements: ["Deployed a healthcare platform used by 2M users", "Certified Scrum Master", "Top performer in 2023 Q2"]
       },
       {
-        id: 3,
-        company: "Facebook (Meta)",
-        position: "Software Engineer Intern",
-        duration: "Summer 2019",
-        location: "Menlo Park, CA",
-        description: "Interned with the Instagram team working on backend infrastructure. Contributed to photo processing pipeline optimization.",
-        achievements: ["Optimized image processing by 25%", "Full-time offer received", "Presented to senior leadership"]
+        id: 2,
+        company: "Capgemini",
+        position: "Intern",
+        duration: "2021 - 2022",
+        location: "Mumbai, India",
+        description: "Built automation scripts for QA team and worked on small internal dashboards.",
+        achievements: ["Saved 50+ man-hours per week", "Recognized by QA team lead"]
       }
-    ],
-    },
-    {
-        id : 3,
-         alumniImg : image,
-        alumniname : "Ravi Kumar",
-        yog : 2023,
-        city : "Hyderabad",     
-        branch : "IT",
-        company: "TCS"
-    },  
-    {
-        id : 4,
-         alumniImg : image,
-        alumniname : "Anil Kumar",
-        yog : 2022,
-        city : "Pune",
-        branch : "CSE",
-        company: "Google"
-    },  
-    {
-        id : 5,
-         alumniImg : image,
-        alumniname : "Suresh Raina",
-        yog : 2021,
-        city : "Mumbai",
-        branch : "ECE",
-        company: "Microsoft"
-    },
-    {
-        id : 6,
-         alumniImg : image,
-        alumniname : "Virat Kohli",
-        yog : 2020,
-        city : "Delhi", 
-        branch : "IT",
-        company: "Facebook"
-    },
-    {
-        id : 7,
-         alumniImg : image,
-        alumniname : "Rohit Sharma",
-        yog : 2019,
-        city : "Chennai",
-        branch : "CSE",
-        company: "Apple"
-    },
-    {       
-        id : 8,
-            alumniImg : image,
-            alumniname : "MS Dhoni",
-            yog : 2018,
-            city : "Ranchi",
-            branch : "ECE",
-            company: "IBM"
-    },
-    {
-        id : 9,
-         alumniImg : image,
-        alumniname : "Jasprit Bumrah",
-        yog : 2017,
-        city : "Ahmedabad",
-            
-        branch : "IT",
-        company: "Oracle"
-    },
-]
+    ]
+  },
+  {
+    id: 3,
+    alumniImg: image,
+    alumniname: "Aditya Singh",
+    active:false,
+    yog: 2021,
+    city: "Pune",
+    branch: "ECE",
+    position: "System Engineer",
+    company: "Infosys",
+    bio: "Electronics grad who pivoted to software. At Infosys, I design scalable solutions for enterprise clients.",
+    skills: ["C++", "Java", "Angular", "OracleDB"],
+    experiences: [
+      {
+        id: 1,
+        company: "Infosys",
+        position: "System Engineer",
+        duration: "2021 - Present",
+        location: "Pune, India",
+        description: "Responsible for designing, testing, and deploying enterprise applications for financial services.",
+        achievements: ["Promoted within 1.5 years", "Developed microservice used in 3 major projects"]
+      },
+      {
+        id: 2,
+        company: "IBM",
+        position: "Summer Intern",
+        duration: "2020",
+        location: "Remote",
+        description: "Worked on API integration tasks for internal HR tools.",
+        achievements: ["Delivered working POC within 3 weeks", "Received Pre-Placement Offer"]
+      }
+    ]
+  },
+  {
+    id: 4,
+    alumniImg: image,
+    alumniname: "Priya Nair",
+    active:false,
+    yog: 2020,
+    city: "Gurugram",
+    branch: "CSE",
+    position: "Senior Analyst",
+    company: "Accenture",
+    bio: "Problem solver with love for data. Currently working as a Senior Analyst in Accenture’s data engineering practice.",
+    skills: ["SQL", "Power BI", "Python", "AWS"],
+    experiences: [
+      {
+        id: 1,
+        company: "Accenture",
+        position: "Senior Analyst",
+        duration: "2020 - Present",
+        location: "Gurugram, India",
+        description: "Specialized in data pipelines, BI dashboards, and client-facing analytics solutions.",
+        achievements: ["Led 4-member data team", "Won Accenture Innovate Award 2022"]
+      },
+      {
+        id: 2,
+        company: "HCL",
+        position: "Intern",
+        duration: "2019",
+        location: "Noida, India",
+        description: "Worked on proof-of-concept for IoT integration.",
+        achievements: ["Published paper with mentor", "Built IoT demo kit still used in training"]
+      }
+    ]
+  },
+  {
+    id: 5,
+    alumniImg: image,
+    alumniname: "Kunal Mehta",
+    active:true,
+    yog: 2019,
+    city: "Mumbai",
+    branch: "ME",
+    position: "Consultant",
+    company: "Cognizant",
+    bio: "Mechanical engineer turned IT consultant. Currently helping clients modernize their legacy systems.",
+    skills: ["Java", "Spring", "Microservices", "Kubernetes"],
+    experiences: [
+      {
+        id: 1,
+        company: "Cognizant",
+        position: "Consultant",
+        duration: "2019 - Present",
+        location: "Mumbai, India",
+        description: "Guiding clients on digital transformation, handling microservices deployment, and consulting on system upgrades.",
+        achievements: ["Migrated 4 legacy systems to cloud", "Recognized as Client Favorite 2021"]
+      },
+      {
+        id: 2,
+        company: "Siemens",
+        position: "Intern",
+        duration: "2018",
+        location: "Mumbai, India",
+        description: "Built mechanical-electrical integration test setups.",
+        achievements: ["Patent filed for design contribution", "Received Siemens Excellence Award"]
+      }
+    ]
+  },
+  {
+    id: 6,
+    alumniImg: image,
+    alumniname: "Priya Nair",
+    active:false,
+    yog: 2020,
+    city: "Gurugram",
+    branch: "CSE",
+    position: "Senior Analyst",
+    company: "Accenture",
+    bio: "Problem solver with love for data. Currently working as a Senior Analyst in Accenture’s data engineering practice.",
+    skills: ["SQL", "Power BI", "Python", "AWS"],
+    experiences: [
+      {
+        id: 1,
+        company: "Accenture",
+        position: "Senior Analyst",
+        duration: "2020 - Present",
+        location: "Gurugram, India",
+        description: "Specialized in data pipelines, BI dashboards, and client-facing analytics solutions.",
+        achievements: ["Led 4-member data team", "Won Accenture Innovate Award 2022"]
+      },
+      {
+        id: 2,
+        company: "HCL",
+        position: "Intern",
+        duration: "2019",
+        location: "Noida, India",
+        description: "Worked on proof-of-concept for IoT integration.",
+        achievements: ["Published paper with mentor", "Built IoT demo kit still used in training"]
+      }
+    ]
+  },
+  {
+    id: 7,
+    alumniImg: image,
+    alumniname: "Kunal Mehta",
+    active:true,
+    yog: 2019,
+    city: "Mumbai",
+    branch: "ME",
+    position: "Consultant",
+    company: "Cognizant",
+    bio: "Mechanical engineer turned IT consultant. Currently helping clients modernize their legacy systems.",
+    skills: ["Java", "Spring", "Microservices", "Kubernetes"],
+    experiences: [
+      {
+        id: 1,
+        company: "Cognizant",
+        position: "Consultant",
+        duration: "2019 - Present",
+        location: "Mumbai, India",
+        description: "Guiding clients on digital transformation, handling microservices deployment, and consulting on system upgrades.",
+        achievements: ["Migrated 4 legacy systems to cloud", "Recognized as Client Favorite 2021"]
+      },
+      {
+        id: 2,
+        company: "Siemens",
+        position: "Intern",
+        duration: "2018",
+        location: "Mumbai, India",
+        description: "Built mechanical-electrical integration test setups.",
+        achievements: ["Patent filed for design contribution", "Received Siemens Excellence Award"]
+      }
+    ]
+  },
+  {
+    id: 8,
+    alumniImg: image,
+    alumniname: "Piyush Garg",
+    active:false,
+    yog: 2025,
+    city: "Mumbai",
+    branch: "CSE",
+    position: "Consultant",
+    company: "Cognizant",
+    bio: "Mechanical engineer turned IT consultant. Currently helping clients modernize their legacy systems.",
+    skills: ["Java", "Spring", "Microservices", "Kubernetes"],
+    experiences: [
+      {
+        id: 1,
+        company: "Cognizant",
+        position: "Consultant",
+        duration: "2019 - Present",
+        location: "Mumbai, India",
+        description: "Guiding clients on digital transformation, handling microservices deployment, and consulting on system upgrades.",
+        achievements: ["Migrated 4 legacy systems to cloud", "Recognized as Client Favorite 2021"]
+      },
+      {
+        id: 2,
+        company: "Siemens",
+        position: "Intern",
+        duration: "2018",
+        location: "Mumbai, India",
+        description: "Built mechanical-electrical integration test setups.",
+        achievements: ["Patent filed for design contribution", "Received Siemens Excellence Award"]
+      }
+    ]
+  },
+  {
+    id: 9,
+    alumniImg: image,
+    alumniname: "Kunal Mehta",
+    active:true,
+    yog: 2019,
+    city: "Mumbai",
+    branch: "ME",
+    position: "Consultant",
+    company: "Cognizant",
+    bio: "Mechanical engineer turned IT consultant. Currently helping clients modernize their legacy systems.",
+    skills: ["Java", "Spring", "Microservices", "Kubernetes"],
+    experiences: [
+      {
+        id: 1,
+        company: "Cognizant",
+        position: "Consultant",
+        duration: "2019 - Present",
+        location: "Mumbai, India",
+        description: "Guiding clients on digital transformation, handling microservices deployment, and consulting on system upgrades.",
+        achievements: ["Migrated 4 legacy systems to cloud", "Recognized as Client Favorite 2021"]
+      },
+      {
+        id: 2,
+        company: "Siemens",
+        position: "Intern",
+        duration: "2018",
+        location: "Mumbai, India",
+        description: "Built mechanical-electrical integration test setups.",
+        achievements: ["Patent filed for design contribution", "Received Siemens Excellence Award"]
+      }
+    ]
+  },
+  
+];
 
-export default ExplorePage
+export default ExplorePage;

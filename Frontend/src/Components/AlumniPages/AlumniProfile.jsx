@@ -29,7 +29,7 @@ function AlumniProfile() {
                 alt={alumni.alumniname}
                 className="w-40 h-36 md:w-40 md:h-40 ml-1 rounded-full border-4 border-white shadow-lg object-cover"
               />
-              <div className="absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
+              {alumni.active? <div className="absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full"></div> : <div className="absolute bottom-2 right-2 w-6 h-6 bg-red-500 rounded-full"></div>}
             </div>
 
             {/* Basic Info */}
@@ -42,7 +42,7 @@ function AlumniProfile() {
               </p>
                {/* Chat discussion popUP */}
       <div>
-        <ChatDiscussion/>
+
       </div>
               <div className="flex flex-wrap gap-4 text-sm text-blue-100 mb-4 ">
                 <div className="flex items-center gap-1 ">

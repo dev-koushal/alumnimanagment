@@ -6,7 +6,7 @@ function Navbar() {
   return (
    <>
    <motion.div initial={{y:-100,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}  className="navbar fixed mt-2 h-12 rounded-full shadow-md shadow-gray-800 z-50 bg-clip-padding backdrop-filter  backdrop-blur bg-opacity-10 backdrop-saturate-100 backdrop-contrast-100  border-gray-500 
-        bg-[#80808030] text-[#8236c1] border-[1px] font-mono">
+        bg-[#80808030] text-[#8236c1] border-[1px] font-Inter">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

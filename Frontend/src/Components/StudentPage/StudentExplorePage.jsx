@@ -57,6 +57,7 @@ const FilterYear = ()=>{
                   className="rounded-full md:rounded-4xl md:-mb-6 md:h-60 h-36 shrink-0 p-4"
                 />
               </figure>
+              {alumni.active? <div className="absolute bottom-2 right-2 w-4 h-4 bg-green-500 rounded-full"></div> : <div className="absolute bottom-2 right-2 w-4 h-4 bg-red-500 rounded-full"></div>}
               <div className="card-body items-center text-center text-sm md:text-md -ml-8 md:ml-0  ">
                 <h2 className="card-title font-semibold -mb-1 ">{alumni.alumniname}</h2>
                 <p className="font-extrabold  -mb-4 font-mono text-xl text-white"> {alumni.company}</p>
