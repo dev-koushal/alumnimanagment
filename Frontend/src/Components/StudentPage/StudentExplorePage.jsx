@@ -13,7 +13,6 @@ function PassAlumniProfile(id){
   navigate(`/alumni/profile/${id}`) 
 }
 
-  
 const FilterCse = ()=>{
   setFilterCard(ExplorePage.filter((alumni)=>alumni.branch === "CSE"));
 }

@@ -33,9 +33,9 @@ function Navbar() {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-[18px]">
       <ul className='flex gap-20 font-bold'>
-      <li><a href='#home' onClick={()=>navigate('/')} >Home</a></li>
-      <li><a href='#services ' onClick={()=>navigate('/')}>Services</a></li>
-      <li><a href='#contact' onClick={()=>navigate('/')}>Contact</a></li>
+      <li className='hover:text-gray-800'><a href='#home' onClick={()=>navigate('/')} >Home</a></li>
+      <li className='hover:text-gray-800'><a href='#services ' onClick={()=>navigate('/')}>Services</a></li>
+      <li className='hover:text-gray-800'><a href='#contact' onClick={()=>navigate('/')}>Contact</a></li>
       </ul>
       <li>
         <details>
